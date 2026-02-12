@@ -17,6 +17,51 @@ const Skills = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const skillIcons = {
+    'Java': '☕',
+    'Python': '🐍',
+    'JavaScript': '⚡',
+    'SQL': '💾',
+    'React': '⚛️',
+    'Redux': '🔄',
+    'HTML': '📄',
+    'Tailwind CSS': '🎨',
+    'CSS3': '🎭',
+    'Node.js': '🟢',
+    'Express.js': '🚀',
+    'Java Spring Boot': '🍃',
+    'MongoDB': '🌿',
+    'Oracle DB': '🗄️',
+    'PostgreSQL': '🐘',
+    'MySQL': '🐬',
+    'SQL Server': '💎',
+    'AWS (EC2, ECS, ECR)': '☁️',
+    'Docker': '🐳',
+    'Jenkins': '🔨',
+    'CI/CD': '🔄',
+    'GitLab CI/CD': '🔄',
+    'Jest': '🃏',
+    'Selenium': '🤖',
+    'Playwright': '🎭',
+    'Appium': '📱',
+    'JUnit': '✔️',
+    'TestNG': '✅',
+    'Pytest': '✔️',
+    'JDBC': '🔗',
+    'REST Assured': '✨',
+    'Git': '🔀',
+    'GitHub': '🐙',
+    'GitLab': '🦊',
+    'Postman': '📮',
+    'Splunk': '📊',
+    'DevTools': '🛠️',
+    'VS Code': '💻',
+    'OpenAI GPT-4': '🤖',
+    'Claude API': '🧠',
+    'GitHub Copilot': '🤝',
+    'Prompt Engineering': '⨀'
+  };
+
   const skillCategories = [
     {
       title: t.skills.languages,
@@ -87,8 +132,9 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className="px-4 py-2 bg-blue-50 text-gray-900 text-sm font-medium rounded-full border border-blue-100 hover:border-blue-300 hover:bg-blue-100 transition-smooth cursor-default"
+                    className="px-4 py-2 bg-blue-50 text-gray-900 text-sm font-medium rounded-full border border-blue-100 hover:border-blue-300 hover:bg-blue-100 transition-smooth cursor-default flex items-center gap-2"
                   >
+                    <span>{skillIcons[skill] || '✨'}</span>
                     {skill}
                   </span>
                 ))}

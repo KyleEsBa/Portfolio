@@ -23,7 +23,7 @@ const Projects = () => {
       name: t.projects.starbucks.name,
       description: t.projects.starbucks.description,
       tools: t.projects.starbucks.tools,
-      image: '☕',
+      image: 'https://cdn.prod.website-files.com/659a9ef71c962485037fcc8f/65ed11b9d9252c7b9cd65ec1_Starbucks-logo.webp',
       demoLink: 'https://kyleesba.github.io/FoodDeliveryApp/',
       githubLink: 'https://github.com/kyleesba/FoodDeliveryApp',
       tags: ['JavaScript', 'HTML', 'Tailwind CSS', 'Local Storage']
@@ -33,7 +33,7 @@ const Projects = () => {
       name: t.projects.hr.name,
       description: t.projects.hr.description,
       tools: t.projects.hr.tools,
-      image: '👥',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIqyfzcP7cTL3H0oPqbN6PwT0eJQ7ohoAeWA&s',
       demoLink: 'https://hr-application-three.vercel.app/',
       githubLink: 'https://github.com/kyleesba/hr-app',
       tags: ['React', 'Redux', 'Vite', 'Context API']
@@ -43,7 +43,7 @@ const Projects = () => {
       name: t.projects.uber.name,
       description: t.projects.uber.description,
       tools: t.projects.uber.tools,
-      image: '🚕',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSChoDW_LPBYWG-RJivhDRU7A7p3GdrQHMKyg&s',
       demoLink: 'https://book-taxi-app.vercel.app',
       githubLink: 'https://github.com/kyleesba/uber-app',
       tags: ['React', 'Redux', 'React Router', 'Validation']
@@ -81,9 +81,11 @@ const Projects = () => {
               }}
             >
               <div className="w-full h-48 bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center overflow-hidden relative">
-                <span className="text-8xl group-hover:scale-110 transition-transform duration-300">
-                  {project.image}
-                </span>
+                <img 
+                  src={project.image} 
+                  alt={project.name}
+                  className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
 
               <div className="p-6">
