@@ -61,19 +61,19 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: '✉️',
+      icon: '',
       label: t.contact.info.email,
       value: 'kyleescobedob@gmail.com',
       href: 'mailto:kyleescobedob@gmail.com'
     },
     {
-      icon: '📱',
+      icon: '',
       label: t.contact.info.phone,
       value: '+1 (650) 313-0221',
       href: 'tel:+16503130221'
     },
     {
-      icon: '📍',
+      icon: '',
       label: t.contact.info.location,
       value: 'Menlo Park, CA',
       href: 'https://maps.google.com/?q=Menlo+Park,+CA'

@@ -23,21 +23,21 @@ const Education = () => {
       degree: t.education.purdue.degree,
       status: t.education.purdue.status,
       date: t.education.purdue.date,
-      icon: '🎓',
+      icon: '',
       bgClass: 'from-blue-50 to-blue-100',
       borderClass: 'border-blue-600'
     },
     {
       school: t.education.unmsm.school,
       degree: t.education.unmsm.degree,
-      icon: '📚',
+      icon: '',
       bgClass: 'from-indigo-50 to-indigo-100',
       borderClass: 'border-indigo-600'
     },
     {
       school: t.education.uac.school,
       degree: t.education.uac.degree,
-      icon: '🏫',
+      icon: '',
       bgClass: 'from-purple-50 to-purple-100',
       borderClass: 'border-purple-600'
     }
