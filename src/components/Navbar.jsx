@@ -49,9 +49,8 @@ const Navbar = () => {
             <button
               onClick={toggleLanguage}
               className="px-3 py-2 rounded-md text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-200 flex items-center space-x-1"
-            >
-              <span>{language === 'en' ? '🇺🇸' : '🇪🇸'}</span>
-              <span className="font-bold">{language === 'en' ? 'EN' : 'ES'}</span>
+            >              
+              <span className="font-bold">{language === 'en' ? 'ES' : 'EN'}</span>
             </button>
 
             <button
